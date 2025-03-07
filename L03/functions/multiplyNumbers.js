@@ -1,11 +1,11 @@
-const execute = async ({ num1, num2 }) => {
-    return { result: num1 + num2 };
+const execute = async (num1, num2) => {
+    return { result: num1 * num2 };
 };
 
 const details = {
     type: "function",
     function: {
-        name: 'addNumbers',
+        name: 'multiplyNumbers',
         parameters: {
             type: 'object',
             properties: {
