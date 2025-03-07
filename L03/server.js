@@ -4,6 +4,8 @@ import { OpenAI} from 'openai';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import fs from "fs";
+import dotenv from 'dotenv';
+
 // Initialize Express server
 const app = express();
 app.use(bodyParser.json());
@@ -17,6 +19,8 @@ app.use(express.static(path.resolve(process.cwd(), './public')));
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
+
+
 let state = {
     chatgpt:false,
     assistant_id: "",
