@@ -6,6 +6,8 @@ import { fileURLToPath } from 'url';
 import fs from "fs";
 import dotenv from 'dotenv';
 
+dotenv.config();
+
 // Initialize Express server
 const app = express();
 app.use(bodyParser.json());
