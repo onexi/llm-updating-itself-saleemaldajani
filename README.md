@@ -27,7 +27,7 @@ The server:
 L03/
 ├── functions/             # Folder where all dynamically generated tool files are stored
 ├── public/                # Static files served by the Express server (e.g., index.html)
-└── server.js              # Main Express server code (the code provided)
+└── server_tool.js              # Main Express server code (the code provided)
 ```
 
 *Note: The server code assumes you are already inside the L03 directory. It writes tool files directly to the `functions` folder rather than creating a nested `L03/functions` directory.*
@@ -62,17 +62,22 @@ The homework code works! I took a video demonstrating the working code:
    ```bash
    npm install
    ```
-
-2. **Configure Environment Variables**  
+   
+2. **Change directory**
+   ```bash
+   cd L03
+   ```
+   
+4. **Configure Environment Variables**  
    Create a `.env` file in the root of L03 with your OpenAI API key:
    ```
    OPENAI_API_KEY=your_openai_api_key_here
    ```
 
-3. **Start the Server**  
+5. **Start the Server**  
    Run:
    ```bash
-   node server.js
+   node server_tool.js
    ```
    The server listens on port 3000 by default.
 
